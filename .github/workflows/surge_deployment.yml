@@ -40,4 +40,4 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to surge
-      run: surge ./build ra_dep_minhaj.surge.sh ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build ra_dep_minhaj.surge.sh --token ${{secrets.SURGE_TOKEN}}
